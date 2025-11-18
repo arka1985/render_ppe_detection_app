@@ -169,7 +169,7 @@ if uploaded and start_btn:
         cv2.putText(img, f"Jacket Worn: {jacket_ok}", (25, 140),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.65, (0,255,255), 2)
 
-        frame_placeholder.image(img[:, :, ::-1], width="stretch")
+        frame_placeholder.image(img[:, :, ::-1], use_container_width=True)
 
     cap.release()
     st.success("🎉 Detection Completed Successfully!")
@@ -185,3 +185,4 @@ MBBS, MD (Gold Medalist), DPH, Dip. Geriatric Medicine, CCEBDM,<br>
 PhD (Computer Science & Engineering)
 </p>
 """, unsafe_allow_html=True)
+
