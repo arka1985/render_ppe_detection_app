@@ -1,0 +1,6 @@
+streamlit==1.37.0
+ultralytics
+opencv-python-headless==4.9.0.80
+numpy
+torch
+ffmpeg-python
